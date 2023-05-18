@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7BC074242A161693004937ED /* RetailApp.main.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetailApp.main.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC074242A161693004937ED /* RetailApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetailApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC074272A161693004937ED /* RetailAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetailAppApp.swift; sourceTree = "<group>"; };
 		7BC074292A161693004937ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7BC0742B2A161694004937ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		7BC074252A161693004937ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7BC074242A161693004937ED /* RetailApp.main.app */,
+				7BC074242A161693004937ED /* RetailApp.app */,
 				7BC074352A161694004937ED /* RetailAppTests.xctest */,
 				7BC0743F2A161694004937ED /* RetailAppUITests.xctest */,
 			);
@@ -160,7 +160,7 @@
 			);
 			name = RetailApp;
 			productName = RetailApp;
-			productReference = 7BC074242A161693004937ED /* RetailApp.main.app */;
+			productReference = 7BC074242A161693004937ED /* RetailApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7BC074342A161694004937ED /* RetailAppTests */ = {
@@ -426,7 +426,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BC074532A1616B2004937ED /* Config.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "${ASSETCATALOG_COMPILER_APPICON_NAME}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = RetailApp/RetailApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,8 +451,8 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.desktop.app.RetailApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
+				PRODUCT_NAME = "$(PRODUCT_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -466,7 +466,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BC074532A1616B2004937ED /* Config.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "${ASSETCATALOG_COMPILER_APPICON_NAME}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = RetailApp/RetailApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -491,8 +491,8 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.desktop.app.RetailApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
+				PRODUCT_NAME = "${PRODUCT_NAME}";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
