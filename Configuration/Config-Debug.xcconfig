@@ -1,0 +1,12 @@
+//
+//  Config-Debug.xcconfig
+//  RetailApp
+//
+//  Created by Bibin Jaimon on 18/05/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PRODUCT_BUNDLE_IDENTIFIER = com.retail.app.debug
+TARGET_NAME = RetailApp.debug
