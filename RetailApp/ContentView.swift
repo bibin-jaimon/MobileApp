@@ -10,6 +10,7 @@ import SwiftUI
 enum DebugPanelList: String {
     case about = "Info Plist"
     case userDefault = "UserDefault"
+    case buildInfo = "Build Info"
 }
 
 struct ContentView: View {
@@ -17,6 +18,7 @@ struct ContentView: View {
     @AppStorage("isOnboarding") var isOnboarding: Bool = false
     
     var dataSource: [DebugPanelList] = [
+        .buildInfo,
         .about,
         .userDefault
     ]
@@ -27,6 +29,7 @@ struct ContentView: View {
             List(dataSource, id: \.self) { item in
                 NavigationLink(item.rawValue) {
                     switch item {
+                    case .buildInfo: DetailView(title: item.rawValue, debugData: Fetcher.installedBuildDetails())
                     case .about: DetailView(title: item.rawValue, debugData: Fetcher.getInfoDict())
                     case .userDefault: DetailView(title: item.rawValue, debugData: Fetcher.getAllUserDefaultsData())
                     }
