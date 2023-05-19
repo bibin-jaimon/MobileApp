@@ -14,6 +14,8 @@
 		7BC0743A2A161694004937ED /* RetailAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC074392A161694004937ED /* RetailAppTests.swift */; };
 		7BC074442A161694004937ED /* RetailAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC074432A161694004937ED /* RetailAppUITests.swift */; };
 		7BC074462A161694004937ED /* RetailAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC074452A161694004937ED /* RetailAppUITestsLaunchTests.swift */; };
+		7BC074572A1622BA004937ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC074562A1622BA004937ED /* AppDelegate.swift */; };
+		7BC074592A1642B9004937ED /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC074582A1642B9004937ED /* Fetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		7BC074532A1616B2004937ED /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		7BC074542A1616BE004937ED /* Config-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Debug.xcconfig"; sourceTree = "<group>"; };
 		7BC074552A1616C8004937ED /* Config-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Release.xcconfig"; sourceTree = "<group>"; };
+		7BC074562A1622BA004937ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BC074582A1642B9004937ED /* Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				7BC0742B2A161694004937ED /* Assets.xcassets */,
 				7BC0742D2A161694004937ED /* RetailApp.entitlements */,
 				7BC0742E2A161694004937ED /* Preview Content */,
+				7BC074562A1622BA004937ED /* AppDelegate.swift */,
+				7BC074582A1642B9004937ED /* Fetcher.swift */,
 			);
 			path = RetailApp;
 			sourceTree = "<group>";
@@ -273,6 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC074572A1622BA004937ED /* AppDelegate.swift in Sources */,
+				7BC074592A1642B9004937ED /* Fetcher.swift in Sources */,
 				7BC0742A2A161693004937ED /* ContentView.swift in Sources */,
 				7BC074282A161693004937ED /* RetailAppApp.swift in Sources */,
 			);
@@ -430,7 +438,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = RetailApp/RetailApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DEVELOPMENT_ASSET_PATHS = "\"RetailApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 87TJZ5Q7TH;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -450,7 +458,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
 				PRODUCT_NAME = "$(PRODUCT_NAME)";
 				SDKROOT = auto;
@@ -470,7 +478,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = RetailApp/RetailApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				DEVELOPMENT_ASSET_PATHS = "\"RetailApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 87TJZ5Q7TH;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -490,7 +498,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_BUNDLE_IDENTIFIER}";
 				PRODUCT_NAME = "${PRODUCT_NAME}";
 				SDKROOT = auto;
