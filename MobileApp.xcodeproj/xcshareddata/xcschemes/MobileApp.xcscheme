@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7BC074232A161693004937ED"
-               BuildableName = "RetailApp.app"
-               BlueprintName = "RetailApp"
-               ReferencedContainer = "container:RetailApp.xcodeproj">
+               BuildableName = "MobileApp.app"
+               BlueprintName = "MobileApp"
+               ReferencedContainer = "container:MobileApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,9 +35,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7BC074342A161694004937ED"
-               BuildableName = "RetailAppTests.xctest"
-               BlueprintName = "RetailAppTests"
-               ReferencedContainer = "container:RetailApp.xcodeproj">
+               BuildableName = "MobileAppTests.xctest"
+               BlueprintName = "MobileAppTests"
+               ReferencedContainer = "container:MobileApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,9 +46,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7BC0743E2A161694004937ED"
-               BuildableName = "RetailAppUITests.xctest"
-               BlueprintName = "RetailAppUITests"
-               ReferencedContainer = "container:RetailApp.xcodeproj">
+               BuildableName = "MobileAppUITests.xctest"
+               BlueprintName = "MobileAppUITests"
+               ReferencedContainer = "container:MobileApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -68,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7BC074232A161693004937ED"
-            BuildableName = "RetailApp.app"
-            BlueprintName = "RetailApp"
-            ReferencedContainer = "container:RetailApp.xcodeproj">
+            BuildableName = "MobileApp.app"
+            BlueprintName = "MobileApp"
+            ReferencedContainer = "container:MobileApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7BC074232A161693004937ED"
-            BuildableName = "RetailApp.app"
-            BlueprintName = "RetailApp"
-            ReferencedContainer = "container:RetailApp.xcodeproj">
+            BuildableName = "MobileApp.app"
+            BlueprintName = "MobileApp"
+            ReferencedContainer = "container:MobileApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

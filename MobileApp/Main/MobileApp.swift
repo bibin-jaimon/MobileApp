@@ -1,6 +1,6 @@
 //
-//  RetailApp.swift
-//  RetailApp
+//  MobileApp.swift
+//  MobileApp
 //
 //  Created by Bibin Jaimon on 18/05/23.
 //
@@ -9,7 +9,7 @@ import SwiftUI
 import UIKit
 
 @main
-struct RetailApp: App {
+struct MobileApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     @StateObject private var store = RootStore.shared

@@ -1,6 +1,6 @@
 //
 //  Config.xcconfig
-//  RetailApp
+//  MobileApp
 //
 //  Created by Bibin Jaimon on 18/05/23.
 //
@@ -8,6 +8,6 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-PRODUCT_NAME = RetailApp
+PRODUCT_NAME = MobileApp
 CURRENT_PROJECT_VERSION = 1
 MARKETING_VERSION = 1.0.0

@@ -1,6 +1,6 @@
 //
 //  RootView.swift
-//  RetailApp
+//  MobileApp
 //
 //  Created by Bibin Jaimon on 20/05/23.
 //

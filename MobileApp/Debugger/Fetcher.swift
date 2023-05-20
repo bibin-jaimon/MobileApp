@@ -1,6 +1,6 @@
 //
 //  Fetcher.swift
-//  RetailApp
+//  MobileApp
 //
 //  Created by Bibin Jaimon on 18/05/23.
 //
