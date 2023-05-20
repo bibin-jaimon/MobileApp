@@ -23,5 +23,6 @@ struct RootViewContainer: View {
 struct RootView_Previews: PreviewProvider {
     static var previews: some View {
         RootViewContainer()
+            .environmentObject(RootStore.shared)
     }
 }
