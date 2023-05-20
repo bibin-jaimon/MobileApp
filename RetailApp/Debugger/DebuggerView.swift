@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  DebuggerView.swift
 //  RetailApp
 //
 //  Created by Bibin Jaimon on 18/05/23.
@@ -13,11 +13,16 @@ enum DebugPanelList: String {
     case buildInfo = "Build Info"
 }
 
-struct ContentView: View {
-    
-    @AppStorage("isOnboarding") var isOnboarding: Bool = false
-    
-    var dataSource: [DebugPanelList] = [
+
+struct DebugData: Identifiable {
+    let id: UUID = UUID()
+    let key: String
+    let value: String
+}
+
+
+struct DebuggerViewContainer: View {
+    private var dataSource: [DebugPanelList] = [
         .buildInfo,
         .about,
         .userDefault
@@ -25,7 +30,6 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            // Step 2: Create a List view
             List(dataSource, id: \.self) { item in
                 NavigationLink(item.rawValue) {
                     switch item {
@@ -33,14 +37,11 @@ struct ContentView: View {
                     case .about: DetailView(title: item.rawValue, debugData: Fetcher.getInfoDict())
                     case .userDefault: DetailView(title: item.rawValue, debugData: Fetcher.getAllUserDefaultsData())
                     }
-                    
                 }
             }
-            .navigationTitle("Debug Panel")
+            .navigationTitle("Debugger")
         }
-        .onAppear {
-            isOnboarding.toggle()
-        }
+        
     }
 }
 
@@ -50,15 +51,12 @@ struct DetailView: View {
     
     var body: some View {
         List(debugData) { data in
-            
             VStack(alignment: .leading) {
                 Text(data.key)
                     .font(.system(size: 18))
                 Text(data.value)
                     .font(.footnote)
             }
-            
-                
         }
         .listStyle(.plain)
         .navigationBarTitle(title)
@@ -66,19 +64,8 @@ struct DetailView: View {
     }
 }
 
-
-extension ContentView {
-    
-}
-
-struct ContentView_Previews: PreviewProvider {
+struct DebuggerViewContainer_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        DebuggerViewContainer()
     }
-}
-
-struct DebugData: Identifiable {
-    let id: UUID = UUID()
-    let key: String
-    let value: String
 }

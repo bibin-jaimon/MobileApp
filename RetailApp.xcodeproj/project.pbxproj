@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7BC074282A161693004937ED /* RetailAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC074272A161693004937ED /* RetailAppApp.swift */; };
-		7BC0742A2A161693004937ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC074292A161693004937ED /* ContentView.swift */; };
+		7BC074282A161693004937ED /* RetailApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC074272A161693004937ED /* RetailApp.swift */; };
+		7BC0742A2A161693004937ED /* DebuggerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC074292A161693004937ED /* DebuggerView.swift */; };
 		7BC0742C2A161694004937ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC0742B2A161694004937ED /* Assets.xcassets */; };
 		7BC074302A161694004937ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC0742F2A161694004937ED /* Preview Assets.xcassets */; };
 		7BC0743A2A161694004937ED /* RetailAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC074392A161694004937ED /* RetailAppTests.swift */; };
@@ -16,6 +16,9 @@
 		7BC074462A161694004937ED /* RetailAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC074452A161694004937ED /* RetailAppUITestsLaunchTests.swift */; };
 		7BC074572A1622BA004937ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC074562A1622BA004937ED /* AppDelegate.swift */; };
 		7BC074592A1642B9004937ED /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC074582A1642B9004937ED /* Fetcher.swift */; };
+		7BC0745E2A18B18E004937ED /* RootViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC0745D2A18B18E004937ED /* RootViewContainer.swift */; };
+		7BC074632A18BC1E004937ED /* RootStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC074622A18BC1E004937ED /* RootStore.swift */; };
+		7BC074662A18BD73004937ED /* LoginViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC074652A18BD73004937ED /* LoginViewContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +40,8 @@
 
 /* Begin PBXFileReference section */
 		7BC074242A161693004937ED /* RetailApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetailApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7BC074272A161693004937ED /* RetailAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetailAppApp.swift; sourceTree = "<group>"; };
-		7BC074292A161693004937ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7BC074272A161693004937ED /* RetailApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetailApp.swift; sourceTree = "<group>"; };
+		7BC074292A161693004937ED /* DebuggerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebuggerView.swift; sourceTree = "<group>"; };
 		7BC0742B2A161694004937ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC0742D2A161694004937ED /* RetailApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RetailApp.entitlements; sourceTree = "<group>"; };
 		7BC0742F2A161694004937ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -52,6 +55,9 @@
 		7BC074552A1616C8004937ED /* Config-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Release.xcconfig"; sourceTree = "<group>"; };
 		7BC074562A1622BA004937ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BC074582A1642B9004937ED /* Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		7BC0745D2A18B18E004937ED /* RootViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewContainer.swift; sourceTree = "<group>"; };
+		7BC074622A18BC1E004937ED /* RootStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootStore.swift; sourceTree = "<group>"; };
+		7BC074652A18BD73004937ED /* LoginViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +109,13 @@
 		7BC074262A161693004937ED /* RetailApp */ = {
 			isa = PBXGroup;
 			children = (
-				7BC074272A161693004937ED /* RetailAppApp.swift */,
-				7BC074292A161693004937ED /* ContentView.swift */,
-				7BC0742B2A161694004937ED /* Assets.xcassets */,
+				7BC074642A18BD63004937ED /* Containers */,
+				7BC074612A18BC0E004937ED /* Store */,
+				7BC074602A18BA54004937ED /* Debugger */,
+				7BC0745F2A18BA2D004937ED /* Main */,
+				7BC0745C2A18111E004937ED /* View */,
 				7BC0742D2A161694004937ED /* RetailApp.entitlements */,
 				7BC0742E2A161694004937ED /* Preview Content */,
-				7BC074562A1622BA004937ED /* AppDelegate.swift */,
-				7BC074582A1642B9004937ED /* Fetcher.swift */,
 			);
 			path = RetailApp;
 			sourceTree = "<group>";
@@ -147,6 +153,49 @@
 				7BC074552A1616C8004937ED /* Config-Release.xcconfig */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		7BC0745C2A18111E004937ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7BC0745F2A18BA2D004937ED /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7BC074562A1622BA004937ED /* AppDelegate.swift */,
+				7BC0742B2A161694004937ED /* Assets.xcassets */,
+				7BC074272A161693004937ED /* RetailApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7BC074602A18BA54004937ED /* Debugger */ = {
+			isa = PBXGroup;
+			children = (
+				7BC074292A161693004937ED /* DebuggerView.swift */,
+				7BC074582A1642B9004937ED /* Fetcher.swift */,
+			);
+			path = Debugger;
+			sourceTree = "<group>";
+		};
+		7BC074612A18BC0E004937ED /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				7BC074622A18BC1E004937ED /* RootStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		7BC074642A18BD63004937ED /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				7BC0745D2A18B18E004937ED /* RootViewContainer.swift */,
+				7BC074652A18BD73004937ED /* LoginViewContainer.swift */,
+			);
+			path = Containers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,10 +328,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC074632A18BC1E004937ED /* RootStore.swift in Sources */,
 				7BC074572A1622BA004937ED /* AppDelegate.swift in Sources */,
+				7BC074662A18BD73004937ED /* LoginViewContainer.swift in Sources */,
 				7BC074592A1642B9004937ED /* Fetcher.swift in Sources */,
-				7BC0742A2A161693004937ED /* ContentView.swift in Sources */,
-				7BC074282A161693004937ED /* RetailAppApp.swift in Sources */,
+				7BC0745E2A18B18E004937ED /* RootViewContainer.swift in Sources */,
+				7BC0742A2A161693004937ED /* DebuggerView.swift in Sources */,
+				7BC074282A161693004937ED /* RetailApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

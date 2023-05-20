@@ -29,6 +29,10 @@ final class Fetcher {
             data.append(DebugData(key: "Bundle Identifier", value: bundleIdentifier))
         }
         
+        if let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String {
+            data.append(DebugData(key: "App Name", value: appName))
+        }
+        
         data.append(DebugData(key: "Device", value: "\(deviceName), \(systemName), \(systemVersion)"))
         return data.sorted{ $0.key < $1.key }
         
